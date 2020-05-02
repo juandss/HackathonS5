@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Helvetic";
+  src: url("/fonts/Helvetica.ttf");
+}
+
+/* *{
+  border: 1px solid #000;
+}*/
+
+.header {
+  grid-area: hd;
+}
+.content {
+  grid-area: main;
+}
+.footer {
+  grid-area: ft;
+}
+
+/* estilos ára el menu de navegacion */
+.navigation {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation li a {
+  font-family: Arial;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.navigation li a:hover {
+  color: cornflowerblue;
+}
+
+.header {
+  background-image: url(/images/banner.png);
+  height: 160px;
+  text-align: center;
+  color: white;
+}
+
+.busqueda form {
+  height: 80px;
+  text-align: center;
+}
+
+.busqueda form input[type="search"] {
+  width: 80%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9fafa;
+  background-image: url("/images/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
